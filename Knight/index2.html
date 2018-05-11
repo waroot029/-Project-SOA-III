@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+	<title>  SOA | III </title>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/orderandadd.js"></script>
+	<script src="contactform/contactform.js"></script>
+
+	<!-- =======================================================
+    Theme Name: Knight
+    Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+	======================================================= -->
+
+</head>
+
+<body>
+	<nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+			
+				<li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+			
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+	<!--main-nav-end-->
+
+	<section class="main-section paddind" id="0">
+			<!--main-section-start-->
+			<div class="container">
+				<h2>Edit Product List</h2>
+		<br>
+		<div class="transbox">
+				<div class="container">
+					<br>
+					<br>
+					<h1 class="display-3">
+						<font color="white">Edit Product</font>
+					</h1>
+					<div class="form-group">
+						<label for="photo">Photo (URL Only):</label>
+						<input type="text" class="form-control" id="photo">
+					</div>
+		
+					<div class="form-group">
+						<label for="Name">Name:</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<label for="desc">Description:</label>
+						<input type="text" class="form-control" id="desc">
+					</div>
+					<div class="form-group">
+						<label for="price">Price:</label>
+						<input type="text" class="form-control" id="price">
+					</div>
+		
+					<div class="form-group">
+						<button id="saveni" class="btn btn-primary">Save</button>
+						<button id="modal-delete" data-toggle="modal" data-target="#myModal" class="btn btn-danger">Delete</button>
+						<a href="index.html" class="btn btn-default">Back</a>
+					</div>
+					<div class="form-group">
+						<div id="alert" class="alert alert-success alert-dismissible fade show">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+							<strong>Success!</strong> Product was saved
+		
+						</div>
+					</div>
+					<br>
+					<br>
+				</div>
+				</div>
+		
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+		
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Confirm Delete to Delete Product</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+		
+							<!-- Modal body -->
+							<div class="modal-body">
+								The deleted cannot be recovered!
+							</div>
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button id="delete" type="button" class="btn btn-danger" data-dismiss="modal">Delete Anyway</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+		
+			</div>
+		</section>
+
+		<section class="main-section client-part">
+				<!--main-section client-part-start-->
+				<div class="container">
+					<b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
+				
+					
+				</div>
+			</section>
+
+			
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
+			<span class="copyright">&copy; 977-277 Service Oriented Architecture | Project III </span>
+			<div class="credits">
+				<!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
+        -->
+				<a href="https://www.facebook.com/WrSwop">Design by</a> by <a href="https://www.facebook.com/WrSwop">Waroot Suwanopard</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+      $('.Portfolio-box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.main-nav li a, .servicelink').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				if ($(window).width() < 768) {
+					$('.main-nav').hide();
+				}
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+
+		});
+	</script>
+	 <script src="js/logistic.js"></script>
+</body>
+
+</html>
